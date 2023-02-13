@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashwanth M V</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=2">
+    <!-- <link rel="manifest" href="/favicon/site.webmanifest"> -->
+    <link rel="icon" href="favicon/favicon.ico?v=2"> <!--Important Step-->
+    <link rel="icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/Yash-Portfolio/images/logo.jpg" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#experience">Experience</a></li> -->
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#cv">CV</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>A Data Engineer</p>
+                <h1><b>Hi, I'am <br><span>Yashwanth</span><br> Madhyala <br>Venkata</b></h1>
+            </div>
+        </div>
+    </div>
+    <!-----------------------About--------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/data-scientist-standing.jpg" alt="">
+                </div>
+                <div class="col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <p>A critter with a kick start career as a Data Engineer, who has a strong organizational skills and
+                        great commitment over work,
+                        looking forward to contribute more towards the Data Science domain with knowledge and technical
+                        skills by diving
+                        more deeper and satisfying multiple roles and clients
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Excel</span><br>Organizing Data with the Tools</li>
+                            <li><span>Snow Flake</span><br>To create critical bussiness insights</li>
+                            <li><span>SQL</span><br>Storing/Altering Data with Queries</li>
+                            <li><span>Power BI</span><br>Visually impressive Data conversion with Tools</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br><br>LatentView Analytics LTD., Chennai
+                                <ul>
+                                    <li>1 ) Undergone a 9-week bootcamp where I learnt all the tools and skills to be a
+                                        productive person to meet the
+                                        responsibilities of the job role.</li>
+                                    <li>2 ) Got familiarized in pipeline building, creating a bridge between local host
+                                        and cloud to meet the requites</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019 - 2022</span><br><br>B.Tech at Jayaprakash Narayan College of Engineering
+                            </li>
+                            <li><span>2016 - 2019</span><br><br>Diploma at Jawaharlal Nehru Government Polytechnic</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------Projects------------------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title myproject">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <span class="material-symbols-outlined">
+                        expand_content
+                    </span>
+                    <h2>National Health Survey</h2>
+                    <p><em>Visualization and dashboard creation on Indian diseases statistics using excel</em></p>
+                    <br>
+                    <ul>
+                        <li>I created a visualization on the statistical data which are related to the diseases and the
+                            lifecycle of women and
+                            men across India categorized on the states they live. </li>
+                        <li>I organized and formatted the data by removing the unwanted and null values with which I was
+                            able to create
+                            better insights and understand the problem statements.</li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">
+                        expand_content
+                    </span>
+                    <h2>Supply and stock database management system</h2>
+                    <br>
+                    <!-- <p>Visualization and dashboard creation on Indian diseases statistics using excel</p> -->
+                    <ul>
+                        <li>This is a capstone project that increases the efficiency of a ware-house, flow of products
+                            in super market.
+                        </li>
+                        <li>In this capstone, I create the tables, and gave primary and foreign key to connect those
+                            tables.
+                        </li>
+                        <li>I restricted data by using the constraints and also optimised the retrieval data with the
+                            help of views,
+                            procedures and functions.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------CV-------------- -->
+    <div id="cv">
+        <div class="container">
+            <h1 class="sub-title myproject curri">Curriculum Vitae</h1>
+            <div class="worklist">
+                <div class="cr">
+                    <ul>
+                        <li><span class="extras">Technical Assistant</span><br><br>--> In Diploma, I was in a team of 4
+                            members. I have been assigned as technical support for the project which eventually helped
+                            me in
+                            production estimation, document handling and interactive with teammates.
+                        </li>
+                        <br>
+                        <li>
+                            <span class="extras">Class Representative Final year (U.G)</span><br><br>
+                            --> I was the student mentor for my class during my final year. During this period, I lead
+                            class with subject knowledge
+                            and acted as a gateway between students and facility in following up the troubles faced by
+                            students. This led me to a
+                            person who is capable of taking correct decisions and to see a problem in different
+                            prospections
+                        </li>
+                    </ul>
+                </div>
+                <div class="tech">
+                    <img src="/Yash-Portfolio/images/data-scientist.jpg" alt="">
+                </div>
+
+            </div>
+            <div class="cv-button">
+                <br>
+                <a href="/Yash-Portfolio/cv/yashwanth_datascience.pdf" class="cv-link" target="_blank">My CV</a>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------Contact-------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title contact-me">Contact Me</h1>
+                    <p class="paragraph">madyalayashwanth@gmail.com</p>
+                    <p class="paragraph">(+91) 7981871133</p>
+                    <div class="social-icons">
+                        <a href="http://www.linkedin.com/in/yashwanthmadhyala" target="_blank"><img
+                                src="/Yash-Portfolio/icons/linkedin.png" class="iconz" alt="Linked-in"></a>
+                        <a href="https://instagram.com/yashwanth_madyala?igshid=NDk5N2NlZjQ=" target="_blank"><img
+                                src="/Yash-Portfolio/icons/instagram.png" class="iconz" alt="Instagram"></a>
+                        <a href="https://twitter.com/YMadyala?t=dXPSOIqErg5AlGL4q9CO0g&s=01" target="_blank"><img
+                                src="/Yash-Portfolio/icons/twitter.png" class="iconz" alt="Twitter"></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="E-mail" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="cv-link sub-mit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <a href="#header"><img src="/Yash-Portfolio/icons/home.png" class="iconz" alt="Home"></a>
+            <p>2023 Copyrigtht © Yashwanth, India. All rights reserved. </p>
+        </div>
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyDtgu3DHUcohLAe0nyuGZklq5DGCtkDosu6B0uI1XPZbdWIUM45OV39BiY6n8-vezs-A/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+<!-- -------------------------------credits: Dilip-Infero--------------------------- -->
+
+</html>
