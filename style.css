@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Comfortaa', cursive;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    background:black;
+    color:#E9F8F9;
+
+}
+#header{
+    height: 100vh;
+    width:100%;
+    background-image: url(images/brain.png);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding:10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 245px;
+}
+nav ul li{
+    display:inline-block;
+    list-style-type: none;
+    margin:10px 20px;
+    cursor: cell;
+}
+nav ul li a{
+    color: #E9F8F9;
+    text-decoration:none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content:'';
+    width:0;
+    height:3px;
+    background:#F0A500;
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    transition: 0.5s;
+}
+nav ul li a:hover:after{
+    width: 100%;
+
+}
+h1{
+    font-size: 14px;
+}
+.header-text{
+    margin-top:5%;
+    font-size:30px;
+}
+.header-text h1{
+    margin-top:20px;
+    font-size:30px;
+}
+.header-text h1 span{
+    color: #F0A500;
+}
+.header-text p{
+    font-size:19px;
+}
+/*-------------------About------------------*/
+#about{
+    padding:80px 0;
+    color:#E6D2AA;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col-1{
+    flex-basis: 35%;
+}
+.col-1 img{
+    width:130%;
+    height:48vh;
+    border-radius: 15px;
+}
+.col-2{
+    flex-basis: 52%;
+}
+.col-2 p{
+    justify-content:center;
+    color:#F5C7A9;
+}
+.sub-title{
+    font-size: 45px;
+}
+.tab-titles{
+    display:flex;
+    margin:20px 0 40px;
+}
+.tab-links{
+    margin-right:50px;
+    font-size:18px;
+    font-weight:500;
+    cursor:pointer;
+    position: relative;
+}
+.tab-links::after{
+    content:'';
+    width:0;
+    height:3px;
+    background:#3F979B;
+    position: absolute;
+    left:0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width:50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin:10px 0;
+}
+.tab-contents ul li span{
+    font-weight:bolder;
+    color:#3F979B;
+    font-size: 17px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/* -------------Projects---------- */
+#projects{
+    padding:20px 0;
+}
+.projects-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap:40px;
+    margin-top:50px;
+}
+.material-symbols-outlined{
+    color: #C3ACD0;
+}
+.projects-list div{
+    background: #FFFBF5;
+    color: #674188;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 550;
+    border-right:10px;
+    border-radius: 15px;
+    transition: background 0.5s, transform 0.5s;
+}
+.myproject{
+    color: #645CBB;
+}
+.projects-list div:hover{
+    background-color: #FFF9B0;
+    transform:translate(-10px);
+}
+/* -------------------CV------------------- */
+#cv{
+    padding:50px 0;
+}
+.worklist{
+    display: flex;
+    padding: 20px 0;
+
+}
+.cr ul li{
+    list-style: none;
+    color: #FFE3E3;
+}
+.cr{
+    padding: 10px;
+    font-size: 18px;
+}
+.tech img{
+    width:500px;
+    border-radius: 15px;
+}
+.extras{
+    color: #FFC288;
+}
+.curri{
+    color: #FFA069;
+}
+.cv-link{
+
+    /* background-color: #FAEAB1; */
+    /* color: #2A1A5E; */
+    background: rgb(255,123,0);
+    background: linear-gradient(90deg, rgba(255,123,0,1) 0%, rgba(233,255,5,1) 75%, rgba(255,183,0,1) 100%);
+    font-weight: 900;
+    color: #393053;
+    border-radius: 15px;
+    padding: 20px 50px;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: background 0.5s;
+
+}
+.cv-link:hover{
+    /* background: #8BF5FA; */
+    background: rgb(57,255,0);
+    background: linear-gradient(90deg, rgba(57,255,0,1) 0%, rgba(5,255,197,1) 75%, rgba(0,202,255,1) 100%);
+}
+/* ----------Contact----------- */
+.iconz{
+    width: 70px;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top:30px
+}
+.paragraph{
+    color: #FFF89A;
+    font-weight: 550;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    margin-right: 15px;
+    display:inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    transform: translate(-5px);
+}
+.contact-me{
+    background: -webkit-linear-gradient(#FB2576, #FF7F3F, #AEE2FF);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    
+    -webkit-text-fill-color: transparent;
+}
+.sub-mit{
+    font-size: 15px;
+    padding: 10px 5px;
+    border-radius: 8px;
+    background: rgb(4, 0, 255);
+    background: linear-gradient(90deg, rgb(180, 219, 6) 0%, rgb(243, 255, 5) 75%, rgb(255, 217, 0) 100%);
+    font-weight: 600;
+}
+.contact-right form{
+    width:100%;
+}
+form input, form textarea{
+    width:100%;
+    border:0;
+    outline:none;
+    background: #85CDFD;
+    padding: 10px;
+    margin:6px 0;
+    font-size:16px;
+    border-radius:6px;
+
+}
+.copyright{
+    width:100%;
+    text-align:center;
+    color: black;
+    padding:15px 0;
+    background:#F5EA5A;
+    font-weight:300;
+    margin-top: 20px;
+}
+.basehome{
+    margin:auto;
+}
+/* ----------css for small screen----------- */
+@media only screen and (max-width:600px){
+    #header{
+        background-image: url(/Yash-Portfolio/images/brain-mobile.png);
+    }
+    .header-text{
+        margin-top:100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size:30px;
+    }
+}
+#msg{
+    color:#F5EA5A;
+    margin-top:5px;
+    display: block;
+}
+
